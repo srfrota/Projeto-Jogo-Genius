@@ -13,6 +13,33 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<style>
+		body {
+		  margin: 20px;
+		  font-size: 15px;
+		}
+		
+		h1 {
+		  text-align: center;
+		}
+		
+		p {
+		  margin-bottom: 10px;
+		}
+	  </style>
+	  <script>
+		function openManual() {
+		  window.open("manual.html", "_blank"); // Abre o manual em uma nova janela
+		  // Ou você pode carregar o manual em uma seção da mesma página usando Ajax ou manipulação do DOM.
+		}
+	  </script>
+	</head>
+	<body>
+	  <h1>Jogo Genius</h1>
+	  
+	  <!-- Botão para abrir o manual -->
+	  <button onclick="openManual()">Manual de Instruções</button>
+	  
 	<div class="container">
 		<div class="game">
 			<div class="game__pad game__pad--tl"></div>
@@ -47,7 +74,7 @@
 					</div> <!-- .group -->
 
 				</div> <!-- .gui-->
-			</div> <!-- game-options -->
+			</div> <!-- game-options -->	
 		</div> <!-- .game -->
 		<footer>@srfrota - 2023</footer>
 	</div> <!-- .container -->
